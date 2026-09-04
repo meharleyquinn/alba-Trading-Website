@@ -102,9 +102,6 @@ h2 { margin-bottom: 0; font-size: clamp(33px, 4vw, 52px); line-height: 1.12; }
 .division-card-featured h3 em { color: var(--accent); }
 .division-card p { margin: 0; color: var(--slate); font-size: 13px; line-height: 1.65; }
 .division-card-featured p { color: #afbdc8; }
-.division-card > a { width: 33px; height: 33px; display: grid; place-items: center; margin-top: auto; border: 1px solid var(--line); color: var(--navy); font-size: 20px; }
-.division-card-featured > a { border-color: #4c6378; color: var(--accent); }
-
 .inquiry { background: #e8e5de; color: var(--navy); }
 .inquiry-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 120px; }
 .inquiry-copy h2 { max-width: 420px; }
