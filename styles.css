@@ -25,8 +25,9 @@ button, input, select, textarea { font: inherit; }
 .site-header { background: var(--white); color: var(--navy); border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 84px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 12px; }
-.brand-logo { display: block; width: auto; height: 39px; border: 0; object-fit: contain; }
-.brand-footer .brand-logo { filter: brightness(1.45); }
+.brand-logo { display: block; width: auto; height: 48px; border: 0; object-fit: contain; }
+.footer-logo-card { display: block; padding: 12px 18px; background: var(--white); border-radius: 10px; }
+.brand-footer .brand-logo { height: 44px; }
 .brand-mark { width: 42px; height: 39px; display: grid; place-items: center; border: 1px solid var(--navy); color: var(--navy); font: 800 11px var(--display); letter-spacing: .5px; }
 .brand-name { display: grid; font: 700 17px/1 var(--display); letter-spacing: 0; }
 .brand-name strong { font-weight: 700; }
@@ -111,7 +112,7 @@ h2 { margin-bottom: 0; font-size: clamp(33px, 4vw, 52px); line-height: 1.12; }
 .contact-detail { display: flex; gap: 13px; align-items: center; margin-top: 55px; }
 .contact-symbol { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--accent); color: var(--accent-dark); font-size: 20px; }
 .contact-detail small { display: block; color: var(--slate); font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; }
-.contact-detail a { font: 600 14px var(--display); }
+.contact-detail a { display: block; margin-top: 3px; font: 600 14px var(--display); }
 .inquiry-form { padding: 31px 34px 10px; background: #fbfaf7; border: 1px solid var(--line); box-shadow: 0 16px 40px rgba(16,29,45,.08); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 21px; }
 .inquiry-form label { display: block; margin-bottom: 23px; color: var(--slate); font: 700 10px var(--display); letter-spacing: 1.1px; text-transform: uppercase; }
