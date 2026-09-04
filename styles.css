@@ -134,6 +134,47 @@ h2 { margin-bottom: 0; font-size: clamp(33px, 4vw, 52px); line-height: 1.12; }
 .footer-columns strong { color: var(--white); font-size: 14px; }
 .footer-bottom { display: flex; justify-content: space-between; padding: 17px 0; border-top: 1px solid #20374d; color: #6f8293; font-size: 10px; }
 
+#netlify-badge, .netlify-badge, [data-netlify-badge], iframe[src*="netlify"], [class*="netlify-badge"] { display: none !important; }
+
+@media (max-width: 768px) {
+  .container { width: min(100% - 40px, 620px); }
+  .section-pad { padding: 76px 0; }
+  .header-inner { min-height: 88px; }
+  .brand-logo { height: 60px; max-width: min(78vw, 360px); }
+  .menu-toggle { display: block; }
+  .primary-nav { display: none; position: absolute; z-index: 5; top: 88px; left: 0; right: 0; padding: 12px 20px 20px; flex-direction: column; align-items: stretch; gap: 0; background: var(--white); border-top: 1px solid var(--line); box-shadow: 0 14px 24px rgba(16,29,45,.08); }
+  .primary-nav.is-open { display: flex; }
+  .primary-nav a { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .nav-cta { padding: 14px 0; border-left: 0; }
+  .hero { min-height: auto; }
+  .hero::after { width: 100%; opacity: .12; }
+  .hero-content { grid-template-columns: 1fr; gap: 42px; padding-top: 68px; padding-bottom: 58px; }
+  h1 { max-width: 560px; font-size: clamp(42px, 9vw, 58px); }
+  .hero-intro { max-width: 560px; font-size: 16px; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .registration-card { width: 100%; max-width: 480px; padding: 22px; }
+  .registration-details div { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .registration-details dd { text-align: left; }
+  .hero-footer { padding-bottom: 20px; }
+  .about-layout, .inquiry-layout { grid-template-columns: 1fr; gap: 42px; }
+  .about-copy { max-width: 620px; padding-top: 0; }
+  .trust-strip { margin-top: 55px; grid-template-columns: 1fr; }
+  .trust-strip div { padding: 15px 0; }
+  .divisions-heading { display: block; margin-bottom: 36px; }
+  .heading-note { max-width: 520px; margin-top: 22px; }
+  .division-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .division-card { min-height: 320px; padding: 22px; }
+  .division-card h3 { margin-top: 36px; }
+  .inquiry-layout { gap: 30px; }
+  .inquiry-form { padding: 26px 22px 8px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .footer-top { grid-template-columns: 1fr; align-items: start; gap: 38px; padding: 55px 0 45px; }
+  .brand-footer .brand-logo { height: 56px; }
+  .footer-columns { grid-template-columns: 1fr 1fr; row-gap: 30px; }
+  .footer-columns div:last-child { grid-column: 1 / -1; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
+}
+
 @media (max-width: 900px) {
   .container { width: min(100% - 40px, 680px); }
   .primary-nav { gap: 20px; }
