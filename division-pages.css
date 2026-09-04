@@ -29,15 +29,16 @@ a { color: inherit; text-decoration: none; }
 .content-block ul { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 25px; padding: 0 0 0 18px; color: var(--slate); }
 .content-block li::marker { color: var(--gold-dark); }
 .division-main { padding: 92px 0; }
-.division-layout { display: grid; grid-template-columns: 1fr 390px; gap: 100px; align-items: start; }
+.division-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(320px, .75fr); gap: 64px; align-items: start; }
+.division-copy { min-width: 0; }
 .division-copy h2 { margin: 18px 0 22px; font: 700 clamp(30px, 4vw, 48px)/1.12 var(--display); }
 .division-copy h2 em { color: var(--gold-dark); font: 400 1em Georgia, serif; }
 .division-copy > p { max-width: 650px; color: var(--slate); }
 .spec-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 42px; }
-.spec { min-height: 125px; padding: 20px; background: var(--white); border: 1px solid var(--line); box-shadow: 0 8px 18px rgba(16,29,45,.04); }
+.spec { min-height: 0; padding: 20px; background: var(--white); border: 1px solid var(--line); box-shadow: 0 8px 18px rgba(16,29,45,.04); }
 .spec strong { display: block; color: var(--navy); font: 700 13px var(--display); }
 .spec span { display: block; margin-top: 5px; color: var(--slate); font-size: 12px; }
-.inquiry-card { padding: 30px; background: var(--white); border: 1px solid var(--line); box-shadow: 0 18px 40px rgba(16,29,45,.08); }
+.inquiry-card { position: sticky; top: 24px; padding: 30px; background: var(--white); border: 1px solid var(--line); box-shadow: 0 18px 40px rgba(16,29,45,.08); }
 .inquiry-card h2 { margin: 10px 0 25px; font: 700 25px/1.15 var(--display); }
 .inquiry-card label { display: block; margin-top: 17px; color: var(--slate); font: 700 10px var(--display); letter-spacing: 1px; text-transform: uppercase; }
 .inquiry-card input, .inquiry-card textarea { display: block; width: 100%; padding: 10px 0; margin-top: 5px; border: 0; border-bottom: 1px solid #c8c6bf; outline: 0; background: transparent; color: var(--navy); font: 14px var(--sans); }
@@ -49,4 +50,4 @@ a { color: inherit; text-decoration: none; }
 .footer-inner { padding: 32px 0; }
 .footer-inner small { color: #8493a1; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
-@media (max-width: 768px) { .container { width: calc(100% - 40px); } .header-inner { min-height: 88px; } .brand-logo { height: 60px; max-width: 78vw; } .menu-toggle { display: block; } .primary-nav { display: none; position: absolute; z-index: 2; top: 88px; left: 0; right: 0; padding: 10px 20px 20px; flex-direction: column; align-items: stretch; gap: 0; background: var(--white); box-shadow: 0 14px 24px rgba(16,29,45,.08); } .primary-nav.is-open { display: flex; } .primary-nav a { padding: 13px 0; border-bottom: 1px solid var(--line); } .division-hero { padding: 68px 0 58px; } .division-hero p { font-size: 16px; } .division-carousel { min-height: 210px; margin-top: 36px; } .division-main { padding: 65px 0; } .division-layout { grid-template-columns: 1fr; gap: 48px; } .spec-grid, .content-block ul { grid-template-columns: 1fr; } .inquiry-card { padding: 24px; } .footer-links { flex-direction: column; gap: 10px; } }
+@media (max-width: 768px) { .container { width: calc(100% - 40px); } .header-inner { min-height: 88px; } .brand-logo { height: 60px; max-width: 78vw; } .menu-toggle { display: block; } .primary-nav { display: none; position: absolute; z-index: 2; top: 88px; left: 0; right: 0; padding: 10px 20px 20px; flex-direction: column; align-items: stretch; gap: 0; background: var(--white); box-shadow: 0 14px 24px rgba(16,29,45,.08); } .primary-nav.is-open { display: flex; } .primary-nav a { padding: 13px 0; border-bottom: 1px solid var(--line); } .division-hero { padding: 68px 0 58px; } .division-hero p { font-size: 16px; } .division-carousel { min-height: 210px; margin-top: 36px; } .division-main { padding: 65px 0; } .division-layout { grid-template-columns: 1fr; gap: 48px; } .spec-grid, .content-block ul { grid-template-columns: 1fr; } .inquiry-card { position: static; padding: 24px; } .footer-links { flex-direction: column; gap: 10px; } }
