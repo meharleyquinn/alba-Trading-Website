@@ -109,7 +109,6 @@ h2 { margin-bottom: 0; font-size: clamp(33px, 4vw, 52px); line-height: 1.12; }
 .inquiry-copy h2 { max-width: 420px; }
 .inquiry-copy > p:not(.eyebrow) { max-width: 370px; margin-top: 25px; color: var(--slate); font-size: 15px; }
 .contact-detail { display: flex; gap: 13px; align-items: center; margin-top: 55px; }
-.contact-symbol { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--accent); color: var(--accent-dark); font-size: 20px; }
 .contact-detail small { display: block; color: var(--slate); font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; }
 .contact-detail a { display: block; margin-top: 3px; font: 600 14px var(--display); }
 .inquiry-form { padding: 31px 34px 10px; background: #fbfaf7; border: 1px solid var(--line); box-shadow: 0 16px 40px rgba(16,29,45,.08); }
