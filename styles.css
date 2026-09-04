@@ -20,10 +20,13 @@ a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 .container { width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
 .section-pad { padding: 112px 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 .site-header { background: var(--white); color: var(--navy); border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 84px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 12px; }
+.brand-logo-frame { width: 248px; height: 57px; display: block; overflow: hidden; background: var(--white); }
+.brand-logo { display: block; width: 248px; height: 57px; border: 0; object-fit: contain; }
 .brand-mark { width: 42px; height: 39px; display: grid; place-items: center; border: 1px solid var(--navy); color: var(--navy); font: 800 11px var(--display); letter-spacing: .5px; }
 .brand-name { display: grid; font: 700 17px/1 var(--display); letter-spacing: 0; }
 .brand-name strong { font-weight: 700; }
