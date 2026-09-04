@@ -25,8 +25,8 @@ button, input, select, textarea { font: inherit; }
 .site-header { background: var(--white); color: var(--navy); border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 84px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 12px; }
-.brand-logo-frame { width: 248px; height: 57px; display: block; overflow: hidden; background: var(--white); }
-.brand-logo { display: block; width: 248px; height: 57px; border: 0; object-fit: contain; }
+.brand-logo { display: block; width: auto; height: 39px; border: 0; object-fit: contain; }
+.brand-footer .brand-logo { filter: brightness(1.45); }
 .brand-mark { width: 42px; height: 39px; display: grid; place-items: center; border: 1px solid var(--navy); color: var(--navy); font: 800 11px var(--display); letter-spacing: .5px; }
 .brand-name { display: grid; font: 700 17px/1 var(--display); letter-spacing: 0; }
 .brand-name strong { font-weight: 700; }
@@ -124,7 +124,7 @@ h2 { margin-bottom: 0; font-size: clamp(33px, 4vw, 52px); line-height: 1.12; }
 .form-status { margin: 0; color: var(--accent-dark); font-size: 12px; }
 
 .site-footer { background: var(--navy-deep); color: var(--white); }
-.footer-top { display: grid; grid-template-columns: .85fr 1.15fr; gap: 120px; padding: 65px 0 60px; }
+.footer-top { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 120px; padding: 65px 0 60px; }
 .footer-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
 .footer-columns div { display: flex; flex-direction: column; gap: 8px; }
 .footer-columns p { margin-bottom: 12px; color: #8b9dad; font: 700 10px var(--display); letter-spacing: 1.4px; text-transform: uppercase; }
@@ -174,7 +174,7 @@ h2 { margin-bottom: 0; font-size: clamp(33px, 4vw, 52px); line-height: 1.12; }
   .inquiry-layout { gap: 30px; }
   .contact-detail { margin-top: 35px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
-  .footer-top { grid-template-columns: 1fr; gap: 45px; padding: 55px 0 45px; }
+  .footer-top { grid-template-columns: 1fr; align-items: start; gap: 45px; padding: 55px 0 45px; }
   .footer-columns { grid-template-columns: 1fr 1fr; row-gap: 32px; }
   .footer-columns div:last-child { grid-column: 1 / -1; }
   .footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
