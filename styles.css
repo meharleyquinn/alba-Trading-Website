@@ -57,6 +57,8 @@ h1 em, h2 em, h3 em { color: var(--accent); font-family: var(--serif); font-weig
 .button-primary { background: var(--accent); color: var(--navy); }
 .button-primary:hover { background: #d8b269; }
 .button-light { background: var(--white); color: var(--navy); }
+.button-light:hover { background: var(--accent); }
+.button:focus-visible, .primary-nav a:focus-visible, .footer-columns a:focus-visible, .text-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; font: 700 12px var(--display); }
 .text-link span { color: var(--accent); font-size: 19px; }
 .text-link.light { color: var(--white); }

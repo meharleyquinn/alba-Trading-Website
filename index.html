@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Alba Trading Company is a diversified multi-activity enterprise serving businesses through automotive, logistics, wholesale, and specialized support services.">
   <title>Alba Trading Company | Business in Motion</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -90,7 +91,9 @@
     <section id="inquiry" class="inquiry section-pad">
       <div class="container inquiry-layout">
         <div class="inquiry-copy"><p class="eyebrow"><span></span> Let’s get to work</p><h2>Tell us what your business <em>needs next.</em></h2><p>Share a few details and our team will route your inquiry to the right Alba division.</p><div class="contact-detail"><span class="contact-symbol">↗</span><div><small>Official contact</small><a href="tel:+966595094856">+966 59 509 4856</a><a href="mailto:albatradingco.sa@gmail.com">albatradingco.sa@gmail.com</a></div></div></div>
-        <form class="inquiry-form" id="inquiry-form">
+        <form class="inquiry-form" id="inquiry-form" name="b2b-inquiry" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="b2b-inquiry">
+          <p class="sr-only"><label>Do not fill this out: <input name="bot-field"></label></p>
           <div class="form-row"><label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" required></label><label>Business email<input type="email" name="email" autocomplete="email" placeholder="you@company.com" required></label></div>
           <div class="form-row"><label>Company name<input type="text" name="company" autocomplete="organization" placeholder="Your company" required></label><label>Area of interest<select name="division" required><option value="" selected disabled>Select a division</option><option>Automotive Services</option><option>Logistics and Transport</option><option>Wholesale Trading</option><option>Specialized Support / Lifestyle Services</option></select></label></div>
           <label>How can we help?<textarea name="message" rows="4" placeholder="Tell us a little about your requirements..."></textarea></label>
@@ -114,12 +117,6 @@
       menuToggle.setAttribute('aria-expanded', 'false');
       navigation.classList.remove('is-open');
     }));
-    document.querySelector('#inquiry-form').addEventListener('submit', (event) => {
-      event.preventDefault();
-      const status = document.querySelector('#form-status');
-      status.textContent = 'Thank you. Our team will be in touch shortly.';
-      event.target.reset();
-    });
   </script>
 </body>
 </html>
